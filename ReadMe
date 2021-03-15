@@ -1,0 +1,4 @@
+Build database
+
+
+docker run --name postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=ZonkyDB -d --publish 5432:5432 postgres:13.1

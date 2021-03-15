@@ -1,15 +1,13 @@
-package com.capovskyAlexandr.MyZonky;
+package com.capovskyAlexandr.zonkytest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MyZonkyApplication {
+public class ZonkytestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyZonkyApplication.class, args);
-
-
+		SpringApplication.run(ZonkytestApplication.class, args);
 	}
 
 }
