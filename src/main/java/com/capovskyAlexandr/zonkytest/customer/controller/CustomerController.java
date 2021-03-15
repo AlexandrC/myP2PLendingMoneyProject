@@ -1,8 +1,8 @@
-package com.capovskyAlexandr.zonkytest.controller;
+package com.capovskyAlexandr.zonkytest.customer.controller;
 
 
-import com.capovskyAlexandr.zonkytest.entity.CustomerEntity;
-import com.capovskyAlexandr.zonkytest.service.CustomerService;
+import com.capovskyAlexandr.zonkytest.customer.entity.CustomerEntity;
+import com.capovskyAlexandr.zonkytest.customer.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
