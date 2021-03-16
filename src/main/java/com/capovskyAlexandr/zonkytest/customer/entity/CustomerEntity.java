@@ -16,7 +16,7 @@ public class CustomerEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
     @Column(unique = true,nullable = false)
-    String username;
+    String userName;
     @Column(nullable = false)
     Integer age;
 
