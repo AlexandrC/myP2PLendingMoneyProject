@@ -17,7 +17,7 @@ public class CustomerService {
      * @param customerEntity
      * @return
      */
-    public CustomerEntity saveCustomer(CustomerEntity customerEntity){
+    public CustomerEntity createCustomer(CustomerEntity customerEntity){
 
         if (customerEntity.getAge()<18){
             throw new CustomerIsUnderAgeException("Age of customer needs to be over 18 years old");
@@ -28,6 +28,8 @@ public class CustomerService {
         return customerRepository.save(customerEntity);
 
     }
+
+
 
 
 }
