@@ -2,9 +2,10 @@ package com.capovskyAlexandr.zonkytest.customer.service;
 
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
-import com.capovskyAlexandr.zonkytest.customer.entity.CustomerEntity;
-import com.capovskyAlexandr.zonkytest.customer.exceptions.CustomerIsUnderAgeException;
-import com.capovskyAlexandr.zonkytest.customer.repository.CustomerRepository;
+import com.capovskyAlexandr.zonkytest.entity.CustomerEntity;
+import com.capovskyAlexandr.zonkytest.exceptions.CustomerIsUnderAgeException;
+import com.capovskyAlexandr.zonkytest.repository.CustomerRepository;
+import com.capovskyAlexandr.zonkytest.service.CustomerService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

@@ -1,4 +1,4 @@
-package com.capovskyAlexandr.zonkytest.customer.entity;
+package com.capovskyAlexandr.zonkytest.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

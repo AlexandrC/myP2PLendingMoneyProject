@@ -1,8 +1,8 @@
 package com.capovskyAlexandr.zonkytest.customer.repository;
 
-import com.capovskyAlexandr.zonkytest.customer.entity.CustomerEntity;
+import com.capovskyAlexandr.zonkytest.entity.CustomerEntity;
+import com.capovskyAlexandr.zonkytest.repository.CustomerRepository;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.internal.matchers.apachecommons.ReflectionEquals;
 import org.springframework.beans.factory.annotation.Autowired;

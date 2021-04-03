@@ -1,5 +1,5 @@
 package com.capovskyAlexandr.zonkytest.exceptionHandler;
-import com.capovskyAlexandr.zonkytest.customer.exceptions.CustomerIsUnderAgeException;
+import com.capovskyAlexandr.zonkytest.exceptions.CustomerIsUnderAgeException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

@@ -1,8 +1,8 @@
-package com.capovskyAlexandr.zonkytest.customer.service;
+package com.capovskyAlexandr.zonkytest.service;
 
-import com.capovskyAlexandr.zonkytest.customer.entity.CustomerEntity;
-import com.capovskyAlexandr.zonkytest.customer.exceptions.CustomerIsUnderAgeException;
-import com.capovskyAlexandr.zonkytest.customer.repository.CustomerRepository;
+import com.capovskyAlexandr.zonkytest.entity.CustomerEntity;
+import com.capovskyAlexandr.zonkytest.exceptions.CustomerIsUnderAgeException;
+import com.capovskyAlexandr.zonkytest.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
