@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @Entity
@@ -19,6 +21,7 @@ public class CustomerEntity {
     String userName;
     @Column(nullable = false)
     Integer age;
+    BigDecimal currentMoneyBalance;
 
 
 
