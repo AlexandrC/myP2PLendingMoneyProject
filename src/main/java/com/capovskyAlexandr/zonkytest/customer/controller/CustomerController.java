@@ -22,7 +22,7 @@ public class CustomerController {
 
 
 
-        return new ResponseEntity<>(customerService.saveCustomer(customer), HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(customerService.createCustomer(customer), HttpStatus.ACCEPTED);
 
 
 

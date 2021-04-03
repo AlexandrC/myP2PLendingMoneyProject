@@ -7,12 +7,19 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<CustomerEntity,Integer> {
 
-//    @Query("select c from CustomerEntity c where c.username Like %:userName%")
-//    List<CustomerEntity> selectByUserName(@Param("userName")String userName);
+
+    Optional<CustomerEntity> findByUserName(@Param("userName")String userName);
+
+
+
+    List<CustomerEntity> findCustomerEntitiesByAgeIsGreaterThanEqual(Integer age);
+
+
 
 
 }
