@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Currency;
 
 @Getter
 @Setter
@@ -22,6 +23,14 @@ public class CustomerEntity {
     @Column(nullable = false)
     Integer age;
     BigDecimal currentMoneyBalance;
+
+    Currency moneyInCurrency;
+
+    public CustomerEntity(Integer id, String userName, Integer age){
+        this.id=id;
+        this.userName=userName;
+        this.age=age;
+    }
 
 
 

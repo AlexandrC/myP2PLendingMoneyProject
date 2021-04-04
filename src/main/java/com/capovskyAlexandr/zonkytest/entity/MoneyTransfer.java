@@ -17,7 +17,7 @@ public class MoneyTransfer {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
     BigDecimal moneyValue;
-    Currency currency;
+    Currency moneyCurrency;
 
 
 }

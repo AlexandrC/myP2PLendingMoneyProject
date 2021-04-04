@@ -6,6 +6,8 @@ import com.capovskyAlexandr.zonkytest.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Currency;
+
 @Service
 public class CustomerService {
 
@@ -22,6 +24,7 @@ public class CustomerService {
         if (customerEntity.getAge()<18){
             throw new CustomerIsUnderAgeException("Age of customer needs to be over 18 years old");
         }
+        customerEntity.setMoneyInCurrency(Currency.getInstance("USN"));
 
 
 
