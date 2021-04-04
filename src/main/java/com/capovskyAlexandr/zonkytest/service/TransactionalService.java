@@ -24,7 +24,9 @@ public class TransactionalService {
     public BigDecimal lendMoney(Integer custumerId, MoneyTransfer moneyTransfer){
         Optional<CustomerEntity> customer=customerRepository.findById(custumerId);
         if (customer.isPresent()){
-            customer.get().setCurrentMoneyBalance(moneyTransfer.getMoneyValue());
+
+
+            customer.get().setCurrentMoneyBalance(moneyTransfer.getMoneyValue().negate());
             saveMoneyTransferToDb(moneyTransfer);
             customerRepository.save(customer.get());
 

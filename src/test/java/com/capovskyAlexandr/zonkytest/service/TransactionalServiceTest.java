@@ -67,6 +67,5 @@ class TransactionalServiceTest {
         RuntimeException exception=assertThrows(RuntimeException.class,()-> underTest.lendMoney(1,moneyTransfer),"Expect that customer ID was not found");
         assertEquals("Customer Id was not found",exception.getMessage());
         assertEquals(RuntimeException.class,exception.getClass());
-        //assertTrue(exception.getMessage().matches("Customer Ids was not found"));
     }
 }
